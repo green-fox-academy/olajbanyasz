@@ -6,4 +6,3 @@
 
 ## Workshop
 Build a simple medium article.
-

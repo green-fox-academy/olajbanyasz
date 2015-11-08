@@ -1,7 +1,7 @@
 # Week 1
 
 ## Project
-Create your own CV in html
+Create your own CV in HTML
 
 ## Days
 - Introduction
