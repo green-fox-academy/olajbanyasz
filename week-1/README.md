@@ -6,6 +6,6 @@ Create your own CV in html
 ## Days
 - Introduction
 - Team building :)
-- Command-line
+- Command-line, GIT
 - HTML, CSS
 - Project work
