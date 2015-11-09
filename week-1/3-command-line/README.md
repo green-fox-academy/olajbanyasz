@@ -7,9 +7,23 @@
 ## Please install git on your system:
   - Windows:
     - http://cmder.net/ or https://git-scm.com/download/win
-  - Linux 
+  - Linux
     - `sudo apt-get install git` (Ubuntu)
     - `sudo yum install git` (Fedora)
   - Mac
     - http://git-scm.com/download/mac or `brew install git`
 
+## Tasks for this day
+  - Command Line
+    - setup the environment
+    - basic terminal operations
+    - manipulations
+    - redirections
+    - scripts
+
+  - Git
+    - git basics
+    - branches
+    - git tools
+    - pull requests
+    - rebase
