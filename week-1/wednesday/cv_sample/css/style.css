@@ -1,0 +1,35 @@
+body {
+  color: #333;
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: 'Abril Fatface', serif;
+}
+
+.wrap {
+  margin: 0 auto;
+  max-width: 40em;
+}
+
+header {
+  background-image: url(../img/as.jpg);
+  background-position: center center;
+  background-size: cover;
+  border-radius: 5px;
+  color: #aaaaaa;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  padding-top: 100px;
+}
+
+blockquote {
+  background-color: #cccccc;
+  border-radius: 5px;
+  font-size: 2em;
+  font-family: 'Arbil Fatface', serif;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: center;
+}
