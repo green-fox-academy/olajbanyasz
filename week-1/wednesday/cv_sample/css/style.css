@@ -5,33 +5,6 @@ body {
   line-height: 1.5;
 }
 
-h1 {
-  font-family: 'Abril Fatface', serif;
-}
-
-h3:hover {
-  text-shadow: 1px 1px #aaa;
-}
-
-.float {
-top: 250px;
-left: 50px;
-position: fixed;
-border-radius: 100px;
-}
-
-@media only screen and (max-width: 1150px) {
-    .float
-    {
-        display: none;
-    }
-}
-
-.wrap {
-  margin: 0 auto;
-  max-width: 40em;
-}
-
 header {
   background-image: url(../img/as.jpg);
   background-position: center center;
@@ -41,6 +14,38 @@ header {
   padding-bottom: 0px;
   padding-left: 10px;
   padding-top: 100px;
+}
+
+.float {
+left: 50px;
+position: fixed;
+border-radius: 100px;
+top: 250px;
+}
+
+@media only screen and (max-width: 1150px) {
+    .float
+    {
+        display: none;
+    }
+}
+
+h1 {
+  font-family: 'Abril Fatface', serif;
+}
+
+h3:hover {
+  text-shadow: 1px 1px #aaa;
+}
+
+img:hover {
+  width: 250px;
+  height: auto;
+}
+
+.wrap {
+  margin: 0 auto;
+  max-width: 40em;
 }
 
 blockquote {
@@ -69,9 +74,4 @@ a {
 
 .gfl {
   padding-right: 60px;
-}
-
-img:hover {
-  width: 250px;
-  height: auto;
 }
