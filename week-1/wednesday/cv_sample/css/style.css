@@ -1,3 +1,4 @@
+
 body {
   color: #333;
   font-family: 'Josefin Sans', sans-serif;
@@ -6,6 +7,24 @@ body {
 
 h1 {
   font-family: 'Abril Fatface', serif;
+}
+
+h3:hover {
+  text-shadow: 1px 1px #aaa;
+}
+
+.float {
+top: 250px;
+left: 50px;
+position: fixed;
+border-radius: 100px;
+}
+
+@media only screen and (max-width: 1150px) {
+    .float
+    {
+        display: none;
+    }
 }
 
 .wrap {
@@ -18,18 +37,41 @@ header {
   background-position: center center;
   background-size: cover;
   border-radius: 5px;
-  color: #aaaaaa;
+  color: #ccc;
   padding-bottom: 0px;
   padding-left: 10px;
   padding-top: 100px;
 }
 
 blockquote {
-  background-color: #cccccc;
+  background-color: #000;
   border-radius: 5px;
+  color: #ccc;
   font-size: 2em;
   font-family: 'Arbil Fatface', serif;
   padding-bottom: 20px;
   padding-top: 20px;
   text-align: center;
+}
+
+ul {
+  list-style-image: url(../img/rsz_2dv.jpg);
+}
+
+li:hover {
+  font-weight: bolder;
+}
+
+a {
+  color: green;
+  text-decoration: none;
+}
+
+.gfl {
+  padding-right: 60px;
+}
+
+img:hover {
+  width: 250px;
+  height: auto;
 }
