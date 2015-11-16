@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-container {
+  background: yellow;
+  order: 1;
+  width: 100%;
+}
+
+.main-sidebar {
+  background: aqua;
+  order: 0;
+  width: 176px;
+}
+
+.main-header {
+  background: purple;
+  height: 80px;
+  position: relative;
+}
+
+.main-header ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.main-header li {
+  list-style: none;
+}
+
+.main-header nav, .search {
+  position: absolute;
+}
+
+.user-menu {
+  top: 0;
+  right: 0;
+}
+
+.talk-menu {
+  bottom: 0;
+  left: 0;
+}
+
+.edit-menu {
+  bottom: 0;
+  right: 300px;
+}
+
+.search {
+  bottom: 0;
+  right: 0;
+}
+
+.search input {
+  width: 300px;
+}
+
+.biography {
+  width: 270px;
+  background: #f9f9f9;
+  float: right;
+  border: 1px solid #aaa;
+  margin: 6px 0 12px 12px;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+.main-footer {
+  background: silver;``
+  height: 150px;
+}
