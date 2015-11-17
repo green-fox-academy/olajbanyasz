@@ -14,6 +14,7 @@ body {
   background: aqua;
   order: 0;
   width: 176px;
+  flex: 0 0 auto;
 }
 
 .main-header {
