@@ -20,10 +20,12 @@ Optional:
 * Function basics
     * Stateless functions
     * Side effects
+    * Recursion
 * Exercises:
   Write a function for:
-    1. "Say hi" in different languages
+    1. "Say hi" in different languages, defaulting to English
     2. Calculate circumference of a circle
+    3. Calculate the first n numbers in the Fibonacci sequence
 
 ### Data structures
 
