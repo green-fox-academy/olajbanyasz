@@ -1,9 +1,22 @@
 body {
-  background-color: red;
+  background-color: #f6f6f6;
   color: black;
   display: flex;
   margin: 0;
   min-height: 100vh;
+  font-family: sans-serif;
+}
+
+h1, h2{
+  font-family: serif;
+  font-weight: normal;
+  margin: 0;
+  border-bottom: 1px solid #aaa;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 28.8px;
 }
 
 .main-container {
@@ -46,25 +59,41 @@ body {
   bottom: 0px;
 }
 
+.special-menu {
+  left: 0px;
+  bottom: 0px;
+}
 .edit-menu {
   right: 300px;
   bottom: 0px;
 }
 
 .search {
+  position: relative;
   right: 0px;
-  bottom: 0px;
+  bottom: -15px;
+  width: 260px;
+  height: auto;
 }
 
-.search input {
-  width: 280px;
+.search-button {
+  position: absolute;
+  width: 30px;
+  height: 30;
+  right: 1px;
+  bottom: 16px;
+}
+
+.user-menu, .special-menu, .edit-menu, .talk-menu {
+  font-size: 0.8em;
+}
+.search-field {
+  left: 0;
+  height: 22;
 }
 
 .main-header nav, .search {
   position: absolute;
-}
-.user-menu, .talk-menu, .edit-menu {
-    background-color: blue;
 }
 
 .main-footer {
@@ -72,23 +101,70 @@ body {
   height: 150px;
 }
 
-main {
-  border-top: 1px solid #a7d7f9;
-  border-left: 1px solid #a7d7f9;
-  border-bottom: 1px solid #a7d7f9;
-  min-height: 600px;
-  padding-left: 20px;
-  padding-right: 20px;
+form p {
+  margin-top: 0;
+}
+
+form input {
+  border-radius: 2px;
+  width: 100%;
+  height: 2.5em;
+  padding: 0 0 0 5px;
+  border: 1px solid #ccc;
+}
+
+.formbutton {
+  background: #00af89;
+  color: #fff;
+  border-radius: 2px;
+  border: 1px solid #00af89;
+  width: 298px;
+  height: 2.5em;
+}
+
+::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+.regform {
+  width: 290px;
+  height: 580px;
+  position: relative;
+}
+
+.help, .moreinfo {
+  position: absolute;
+  right: 0px;
+}
+
+.help:hover, .moreinfo:hover {
+  text-decoration: underline;
+}
+
+.formbutton:hover {
+  background-color: #008c6d;
+}
+
+form label {
+  font-weight: bold;
+}
+
+input:focus {
+  box-shadow: inset 0 0 0 2px #347bff ;
+  border-color: #347bff ;
 }
 
 a {
-    text-decoration: none;
-    color: #0645ad;
-    background: none;
+  text-decoration: none;
+  color: #0645ad;
+  background: none;
 }
 
+.formdiv {
+  width: 350px;
+}
 a:visited {
-    color: #0b0080;
+  color: #0b0080;
 }
 
 .biography {
@@ -102,8 +178,22 @@ a:visited {
   box-sizing: border-box;
 }
 
-aside img {
-  width: 160px;
-  height: auto;
+.logo {
+  display: block;
+  width: 136px;
+  height: 155px;
+  background: url(../img/enwiki.png);
+  margin: 6px auto 0;
+  color: rgba(0, 0, 0, 0);
+}
 
+.main-content {
+  background-color: white;
+  border: 1px solid #a7d7f9;
+  border-top: 1px solid #a7d7f9;
+  border-left: 1px solid #a7d7f9;
+  border-bottom: 1px solid #a7d7f9;
+  padding-left: 16px;
+  padding-right: 16px;
+  min-height: 600px;
 }

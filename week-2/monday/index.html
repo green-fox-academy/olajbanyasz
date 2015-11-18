@@ -52,11 +52,11 @@
         </nav>
         <form class="search">
           <input type="search" placeholder="Search..."/>
-          <button type="submit"></button>
+          <button type="submit">o</button>
         </form>
       </header>
 
-      <main>
+      <main class="main-content">
         <h1>Margaret Hamilton (scientist)</h1>
         <div class="source">From Wikipedia, the free encyclopedia</div>
         <p class="warning">
@@ -100,15 +100,65 @@
           Hamilton's work in the Apollo Guidance Computer software prevented an abort of the Apollo 11 Moon landing:[3] Three minutes before the Lunar lander reached the Moon's surface, several computer alarms were triggered. The computer was overloaded with incoming data, because the rendezvous radar system (not necessary for landing) updated an involuntary counter in the computer, which stole cycles from the computer. Due to its robust architecture, the computer was able to keep running; the Apollo onboard flight software was developed using an asynchronous executive so that higher priority jobs (important for landing) could interrupt lower priority jobs. The fault was attributed to a faulty checklist.
         </p>
 
+        <blockquote>
+         <p>
+           Due to an error in the checklist manual, the rendezvous radar switch was placed in the wrong position. This caused it to send erroneous signals to the computer. The result was that the computer was being asked to perform all of its normal functions for landing while receiving an extra load of spurious data which used up 15% of its time. The computer (or rather the software in it) was smart enough to recognize that it was being asked to perform more tasks than it should be performing. It then sent out an alarm, which meant to the astronaut, I'm overloaded with more tasks than I should be doing at this time and I'm going to keep only the more important tasks; i.e., the ones needed for landing ... Actually, the computer was programmed to do more than recognize error conditions. A complete set of recovery programs was incorporated into the software. The software's action, in this case, was to eliminate lower priority tasks and re-establish the more important ones ... If the computer hadn't recognized this problem and taken recovery action, I doubt if Apollo 11 would have been the successful moon landing it was.
+         </p>
+         <p>
+           — Margaret Hamilton, Director of Apollo Flight Computer Programming MIT Draper Laboratory, Cambridge, Massachusetts, "Computer Got Loaded", Letter to Datamation, March 1, 1971[10]
+         </p>
+       </blockquote>
+       <h2>Businesses</h2>
+       <p>
+         From 1976 through 1984, Hamilton was the CEO of a company she co-founded called Higher Order Software (HOS), that created a product called USE.IT, based on the HOS methodology.[11][12][13]
+       </p>
+       <p>
+         In 1986, she became the founder and CEO of Hamilton Technologies, Inc. in Cambridge, Massachusetts. The company was developed around the Universal Systems Language (USL) and its associated automated environment, the 001 Tool Suite, based on her paradigm of Development Before The Fact (DBTF) for systems design and software development.[4][14][15][16]
+       </p>
+       <h2>Legacy</h2>
+       <p>
+         Hamilton is credited with coining the term "software engineering".[17] In this field she was one of those who developed the concepts of asynchronous software, priority scheduling, end-to-end testing, and human-in-the-loop decision capability, such as priority displays which then became the foundation for ultra reliable software design.[18]
+       </p>
+       <h3 class="awards">Awards</h3>
+       <ul class="blue-listing">
+         <li>1986, Augusta Ada Lovelace Award, Association for Women in Computing.[6]</li>
+         <li>2003, NASA Exceptional Space Act Award for scientific and technical contributions. The award included $37,200, the largest amount awarded to any individual in NASA's history.[3][18][19]</li>
+         <li>2009, Outstanding Alumni Award, Earlham College.[6]</li>
+       </ul>
+       <h2>Personal life</h2>
+       <p>
+         She met her husband James Cox Hamilton while at Earlham College. They married in the late 1950s after Heafield earned her bachelor's degree. They had a daughter together named Lauren. The couple eventually divorced.[20]
+       </p>
 
-
+      <h2>Publications</h2>
+       <ul class="blue-listing">
+         <li>
+           M. Hamilton (1994), "Inside Development Before the Fact," cover story, Special Editorial Supplement, 8ES-24ES. Electronic Design, Apr. 1994.
+         </li>
+         <li>
+           M. Hamilton (1994), "001: A Full Life Cycle Systems Engineering and Software Development Environment," cover story, Special Editorial Supplement, 22ES-30ES. Electronic Design, Jun. 1994.
+         </li>
+         <li>
+           M. Hamilton, Hackler, W. R.. (2004), Deeply Integrated Guidance Navigation Unit (DI-GNU) Common Software Architecture Principles (revised dec-29-04), DAAAE30-02-D-1020 and DAAB07-98-D-H502/0180, Picatinny Arsenal, NJ, 2003-2004.
+         </li>
+         <li>
+           M. Hamilton and W. R. Hackler (2007), "Universal Systems Language for Preventative Systems Engineering," Proc. 5th Ann. Conf. Systems Eng. Res. (CSER), Stevens Institute of Technology, Mar. 2007, paper #36.
+         </li>
+         <li>
+           M. Hamilton and W. R. Hackler (2007), "A Formal Universal Systems Semantics for SysML", 17th Annual International Symposium, INCOSE 2007, San Diego, CA, Jun. 2007.
+         </li>
+         <li>
+           M. Hamilton and W. R. Hackler (2008), "Universal Systems Language: Lessons Learned from Apollo", IEEE Computer, Dec. 2008.
+         </li>
+       </ul>
       </main>
+
       <footer class="main-footer">
 
       </footer>
     </div>
     <aside class="main-sidebar">
-        <img alt="wikipedia logo" src="./img/wl.png"/>
+        <a class="logo" href="wikipedia.com">Wikipedia</a>
     </aside>
   </body>
 </html>
