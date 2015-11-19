@@ -11,66 +11,119 @@
         <nav class="user-menu">
           <ul>
             <li>
-              Create account
+              <a href="https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Margaret+Hamilton+%28scientist%29&type=signup">Create account</a>
             </li>
-            <li>
+            <li class="user-status">
               Not logged in
             </li>
             <li>
-              Talk
+              <a href="">Talk</a>
             </li>
             <li>
-              Contributions
+              <a href="">Contributions</a>
             </li>
             <li>
-              Log in
-            </li>
-          </ul>
-        </nav>
-        <nav class="talk-menu">
-          <ul>
-            <li>
-              Article
-            </li>
-            <li>
-              Talk
+              <a href="./form.html">Log in</a>
             </li>
           </ul>
         </nav>
-        <nav class="edit-menu">
+        <nav class="talk-menu tab">
           <ul>
-            <li>
-              Read
+            <li class="active-tab">
+              <a href="" >Article</a>
             </li>
             <li>
-              Edit
+              <a href="">Talk</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="edit-menu tab">
+          <ul>
+            <li class="active-tab">
+              <a href="" >Read</a>
             </li>
             <li>
-              View history
+              <a href="">Edit</a>
+            </li>
+            <li>
+              <a href="">View history</a>
             </li>
           </ul>
         </nav>
         <form class="search">
-          <input type="search" placeholder="Search..."/>
-          <button type="submit">o</button>
+          <p>
+            <input class="search-field" type="search" placeholder="Search...">
+            <input class="search-button" type="submit" value="&#128269">
+          </p>
         </form>
       </header>
 
       <main class="main-content">
-        <h1>Margaret Hamilton (scientist)</h1>
+        <h1 class="main-h1">Margaret Hamilton (scientist)</h1>
         <div class="source">From Wikipedia, the free encyclopedia</div>
         <p class="warning">
           <em>For other people named Margaret Hamilton, see Margaret Hamilton (disambiguation).</em>
         </p>
         <div class="biography">
+          <p><strong>Margareth Hamilton</strong></p>
           <img src="./img/220px-Margaret_Hamilton_1995.jpg" alt="Margaret Hamilton"/>
+          <p>
+            Hamilton in 1995
+          </p>
+          <table>
+            <tr>
+              <td>
+                Born
+              </td>
+              <td>
+                August 17, 1936(age 79) <a href="">Paoli, Idiana</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Education
+              </td>
+              <td>
+                <a href="">Earlham College</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Oppucation
+              </td>
+              <td>
+                CEO of Hamilton Technologies, Inc.
+                <a href="">Computer scientist</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Spouse(s)
+              </td>
+              <td>
+                James Cox Hamilton
+              </td>
+            </tr>
+          </table>
         </div>
         <p>
-          Margaret Heafield Hamilton (born August 17, 1936)[1] is a computer scientist, systems engineer, and business owner. She was Director of the Software Engineering Division of the MIT Instrumentation Laboratory, which developed on-board flight software for the Apollo space program.[2] In one of the critical moments of the Apollo 11 mission, Hamilton's team's work prevented an abort of landing on the moon.[3] In 1986, she became the founder and CEO of Hamilton Technologies, Inc. in Cambridge, Massachusetts. The company was developed around the Universal Systems Language based on her paradigm of Development Before the Fact (DBTF) for systems and software design.[4]
+          <b>Margaret Heafield Hamilton</b> (born August 17, 1936)[1] is a <a>computer scientist</a>, <a>systems engineer</a>, and <a>business owner</a>. She was Director of the Software Engineering Division of the <a>MIT Instrumentation Laboratory</a>, which developed on-board flight software for the <a>Apollo space program.[2]</a> In one of the critical moments of the <a>Apollo 11</a> mission, Hamilton's team's work prevented an abort of landing on the moon.[3] In 1986, she became the founder and CEO of Hamilton Technologies, Inc. in <a>Cambridge, Massachusetts.</a> The company was developed around the <a>Universal Systems Language</a> based on her paradigm of Development Before the Fact (DBTF) for systems and software design.[4]
 
         <p>
             Hamilton has published over 130 papers, proceedings, and reports concerned with the 60 projects and six major programs in which she has been involved.
         </p>
+        <div class="toc-content">
+          <p><strong>Content</strong><span>[<a>hide</a>]</span></p>
+          <ol class="toc-content-list">
+            <li ><a href="">Early life</a></li>
+            <li ><a href="">NASA</a></li>
+            <li ><a href="">Business</a></li>
+            <li ><a href="">Legacy</a></li>
+            <li ><a href="">Personal life</a></li>
+            <li ><a href="">Publications</a></li>
+            <li ><a href="">References</a></li>
+          </ol>
+        </div>
         <h2>Early life</h2>
         <p>
           Margaret Heafield was born to Kenneth Heafield and Ruth Esther Heafield (née Partington).[5] She graduated from Hancock High School in 1954, and earned a B.A. in mathematics with a minor in philosophy from Earlham College in 1958.[6] After graduation, she briefly taught high school math and French while her husband finished earning his undergraduate degree. She moved to Boston, Massachusetts, with the intention of doing graduate study in abstract mathematics at Brandeis University. In 1960 she took an interim position at MIT to develop software for predicting weather on the LGP-30 and the PDP-1 computers (at Marvin Minsky's Project MAC) for professor Edward Norton Lorenz in the meteorology department.[1][7] At that time, computer science and software engineering were not yet disciplines; instead, programmers learned on the job with hands-on experience.[2]
@@ -82,6 +135,12 @@
         <h2>
           NASA
         </h2>
+        <div class="inaction">
+          <img src="./img/margaret_hamilton_in_action.jpg" alt="Margaret Hamilton in action"/>
+          <p>
+            Hamilton during her time as lead Apollo flight software designer.
+          </p>
+        </div>
         <p>
           Hamilton then joined the Charles Stark Draper Laboratory at MIT, which at the time was working on the Apollo space mission. She eventually became the director and supervisor of software programming for Apollo and Skylab.[8]
         </p>
@@ -96,6 +155,12 @@
         </p>
 
         <h2>Apollo 11</h2>
+        <div class="standing">
+          <img src="./img/margaret_hamilton.gif" alt="Margaret Hamilton is standing next to AGC source code"/>
+          <p>
+            Margaret Hamilton standing next to listings of the actual Apollo Guidance Computer (AGC) source code.
+          </p>
+        </div>
         <p>
           Hamilton's work in the Apollo Guidance Computer software prevented an abort of the Apollo 11 Moon landing:[3] Three minutes before the Lunar lander reached the Moon's surface, several computer alarms were triggered. The computer was overloaded with incoming data, because the rendezvous radar system (not necessary for landing) updated an involuntary counter in the computer, which stole cycles from the computer. Due to its robust architecture, the computer was able to keep running; the Apollo onboard flight software was developed using an asynchronous executive so that higher priority jobs (important for landing) could interrupt lower priority jobs. The fault was attributed to a faulty checklist.
         </p>

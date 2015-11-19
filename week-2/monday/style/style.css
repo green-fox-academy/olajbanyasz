@@ -1,5 +1,13 @@
+a:visited {
+  color: #0b0080;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 body {
-  background-color: #f6f6f6;
+  background: linear-gradient(to bottom, #fff 50px, #f6f6f6 150px);
   color: black;
   display: flex;
   margin: 0;
@@ -15,38 +23,43 @@ h1, h2{
   overflow: hidden;
 }
 
+table {
+  font-size: 12px;
+}
+
+.biography p {
+  text-align: center;
+  margin-top: 2px
+}
+
 h1 {
   font-size: 28.8px;
 }
 
 .main-container {
-  background-color: white;
   order: 1;
   width: 100%;
   /* or flex-basis: 100% */
 }
 
 .main-sidebar {
-  background-color:#f6f6f6;
   order: 0;
   width: 176px;
 }
 
 .main-header {
   height: 80px;
-  background-color: #f6f6f6;
   position: relative;
 }
 
 .main-header ul {
-  margin: 0 5px 0 5px;
+  margin: 0;
   padding: 0;
   display: flex;
 }
 
 .main-header li {
   list-style: none;
-  margin-left: 5px;
 }
 
 .user-menu {
@@ -54,9 +67,20 @@ h1 {
   top: 0px;
 }
 
+.user-menu a {
+  padding: 10px 5px 5px 5px;
+  display: block;
+}
+
 .talk-menu {
   left: 0px;
   bottom: 0px;
+}
+
+.user-status {
+  color: grey;
+  padding: 10px 5px 10px 20px;
+  background: url(http://en.wikipedia.org/static/1.27.0-wmf.6/skins/Vector/images/user-icon.png?9e7ea) no-repeat left center;
 }
 
 .special-menu {
@@ -64,32 +88,57 @@ h1 {
   bottom: 0px;
 }
 .edit-menu {
-  right: 300px;
+  right: 290px;
   bottom: 0px;
 }
 
 .search {
   position: relative;
-  right: 0px;
+  right: 30px;
   bottom: -15px;
   width: 260px;
-  height: auto;
 }
 
 .search-button {
   position: absolute;
   width: 30px;
-  height: 30;
+  height: 18px;
   right: 1px;
-  bottom: 16px;
+  bottom: 18px;
+  border: none;
+  background-color: #fff;
+  color: #ccc;
 }
 
 .user-menu, .special-menu, .edit-menu, .talk-menu {
-  font-size: 0.8em;
+  font-size: 0.75em;
 }
+
+.tab {
+  background: linear-gradient(to bottom, #fff 0%, #a7d7f9 100%);
+  padding-left: 1px;
+}
+
+.tab li {
+    padding-right: 1px;
+}
+
+.tab a {
+  background: linear-gradient(to bottom, #fff 0%, #e8f2f8 100%);
+  bottom: -1px;
+  display: block;
+  padding: 15px 5px 5px 5px;
+  position: relative;
+}
+
+.active-tab a {
+  background: white;
+  border-bottom: 1px solid #fff;
+}
+
 .search-field {
   left: 0;
-  height: 22;
+  height: 22px;
 }
 
 .main-header nav, .search {
@@ -150,32 +199,72 @@ form label {
 }
 
 input:focus {
-  box-shadow: inset 0 0 0 2px #347bff ;
+  box-shadow: inset 0 0 0 2px #347bff;
   border-color: #347bff ;
+}
+
+.search-field:focus {
+  box-shadow: none;
+  outline: 0;
+  border: 1px solid #ccc;
 }
 
 a {
   text-decoration: none;
   color: #0645ad;
-  background: none;
 }
 
 .formdiv {
   width: 350px;
 }
-a:visited {
-  color: #0b0080;
-}
 
-.biography {
+.biography, .inaction, .standing{
   width: 270px;
-  min-height: 300px;
+  min-height: 200px;
   background-color: #f9f9f9;
   float: right;
   border: 1px solid #aaaaaa;
   margin: 6px 0 12px 12px;
-  padding: 25px;
+  padding: 25px 25px 5px 25px;
   box-sizing: border-box;
+}
+
+.inaction, .standing {
+  font-size: 12px;
+}
+
+.source {
+  padding: 7px 0 0 0;
+  font-size: 13px;
+}
+
+.blue-listing {
+  list-style: none;
+}
+
+.blue-listing li::before {
+  color: blue;
+  content: "o  ";
+}
+
+.main-h1 {
+  padding: 20px 0 0 0;
+}
+
+.toc-content {
+  border: 1px solid #bbb;
+  width: 120px;
+  padding: 5px;
+  margin: 10px 0 20px 0;
+}
+
+.toc-content-list li {
+  line-height: 1.5em;
+  list-style-image: none;
+}
+
+.warning {
+  padding: 0 0 0 30px;
 }
 
 .logo {
@@ -187,13 +276,20 @@ a:visited {
   color: rgba(0, 0, 0, 0);
 }
 
+mh-h4 {
+  text-align: center;
+  padding: 0;
+  border: 0 auto;
+}
+
 .main-content {
-  background-color: white;
   border: 1px solid #a7d7f9;
   border-top: 1px solid #a7d7f9;
   border-left: 1px solid #a7d7f9;
   border-bottom: 1px solid #a7d7f9;
-  padding-left: 16px;
+  padding-left: 28px;
   padding-right: 16px;
   min-height: 600px;
+  background-color: #fff;
+  font-size: 14px;
 }
