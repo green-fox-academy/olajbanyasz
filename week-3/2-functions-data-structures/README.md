@@ -6,12 +6,12 @@ Mandatory:
 
 * [General introduction to functions][1]
 * [Introduction to Python built-in data structures][2]
+* [Codecademy course on Python functions][4]
+* [Codecademy course on Python lists and dictionaries][5]
 
 Optional:
 
 * [Hands-on Python Tutorial: Defining Functions of your Own][3]
-* [Codecademy course on Python functions][4]
-* [Codecademy course on Python lists and dictionaries][5]
 
 ## Tasks
 
