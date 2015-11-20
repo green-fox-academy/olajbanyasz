@@ -10,16 +10,33 @@ body {
   background: linear-gradient(to bottom, #fff 50px, #f6f6f6 150px);
   color: black;
   display: flex;
+  font-family: sans-serif;
   margin: 0;
   min-height: 100vh;
-  font-family: sans-serif;
+}
+
+form p {
+  margin-top: 0;
+}
+
+form input {
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  height: 2.5em;
+  padding: 0 0 0 5px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 28.8px;
 }
 
 h1, h2{
+  border-bottom: 1px solid #aaa;
   font-family: serif;
   font-weight: normal;
+  line-height: 1.4em;
   margin: 0;
-  border-bottom: 1px solid #aaa;
   overflow: hidden;
 }
 
@@ -27,24 +44,59 @@ table {
   font-size: 12px;
 }
 
-.biography p {
-  text-align: center;
-  margin-top: 2px
+tbody {
+  vertical-align: top;
 }
 
-h1 {
-  font-size: 28.8px;
+td:nth-child(odd) {
+  font-weight: bold;
 }
+
+
+.captcha {
+  border: 1px solid #ccc;
+  height: 180px;
+  margin: 15px 0;
+  position: relative;
+  width: 295px;
+}
+
+.captcha-image {
+  border: 1px solid #ccc;
+  height: 100px;
+  margin: 8px auto;
+  width: 270px;
+}
+
+.captcha-input {
+  margin: 0 10px 0 11px;
+  width: 266px;
+}
+
+.captcha p {
+  font-size: 12px;
+  margin: 2px;
+  text-align: center;
+}
+
+
+.biography p {
+  margin-top: 2px;
+  text-align: center;
+}
+
 
 .main-container {
   order: 1;
   width: 100%;
-  /* or flex-basis: 100% */
 }
 
 .main-sidebar {
+  color: "#0645ad";
+  font-size: 13px;
+  line-height: 18px;
   order: 0;
-  width: 176px;
+  width: 215px;
 }
 
 .main-header {
@@ -53,9 +105,9 @@ h1 {
 }
 
 .main-header ul {
+  display: flex;
   margin: 0;
   padding: 0;
-  display: flex;
 }
 
 .main-header li {
@@ -67,52 +119,41 @@ h1 {
   top: 0px;
 }
 
-.user-menu a {
-  padding: 10px 5px 5px 5px;
-  display: block;
-}
 
-.talk-menu {
-  left: 0px;
+
+.edit-menu {
   bottom: 0px;
+  right: 290px;
 }
 
-.user-status {
-  color: grey;
-  padding: 10px 5px 10px 20px;
-  background: url(http://en.wikipedia.org/static/1.27.0-wmf.6/skins/Vector/images/user-icon.png?9e7ea) no-repeat left center;
+.search {
+  bottom: -15px;
+  position: relative;
+  right: 30px;
+  width: 260px;
+}
+
+.search-button {
+  background-color: #fff;
+  border: none;
+  bottom: 18px;
+  color: #ccc;
+  height: 18px;
+  position: absolute;
+  right: 1px;
+  width: 30px;
+}
+
+.search-field {
+  height: 22px;
+  left: 0;
 }
 
 .special-menu {
   left: 0px;
   bottom: 0px;
 }
-.edit-menu {
-  right: 290px;
-  bottom: 0px;
-}
 
-.search {
-  position: relative;
-  right: 30px;
-  bottom: -15px;
-  width: 260px;
-}
-
-.search-button {
-  position: absolute;
-  width: 30px;
-  height: 18px;
-  right: 1px;
-  bottom: 18px;
-  border: none;
-  background-color: #fff;
-  color: #ccc;
-}
-
-.user-menu, .special-menu, .edit-menu, .talk-menu {
-  font-size: 0.75em;
-}
 
 .tab {
   background: linear-gradient(to bottom, #fff 0%, #a7d7f9 100%);
@@ -131,15 +172,31 @@ h1 {
   position: relative;
 }
 
+.user-menu, .special-menu, .edit-menu, .talk-menu {
+  font-size: 0.75em;
+}
+
+.user-menu a {
+  display: block;
+  padding: 10px 5px 5px 5px;
+}
+
+.talk-menu {
+  bottom: 0px;
+  left: 0px;
+}
+
+.user-status {
+  background: url(http://en.wikipedia.org/static/1.27.0-wmf.6/skins/Vector/images/user-icon.png?9e7ea) no-repeat left center;
+  color: grey;
+  padding: 10px 5px 10px 20px;
+}
+
 .active-tab a {
   background: white;
   border-bottom: 1px solid #fff;
 }
 
-.search-field {
-  left: 0;
-  height: 22px;
-}
 
 .main-header nav, .search {
   position: absolute;
@@ -150,25 +207,13 @@ h1 {
   height: 150px;
 }
 
-form p {
-  margin-top: 0;
-}
-
-form input {
-  border-radius: 2px;
-  width: 100%;
-  height: 2.5em;
-  padding: 0 0 0 5px;
-  border: 1px solid #ccc;
-}
-
 .formbutton {
   background: #00af89;
-  color: #fff;
-  border-radius: 2px;
   border: 1px solid #00af89;
-  width: 298px;
+  border-radius: 2px;
+  color: #fff;
   height: 2.5em;
+  width: 298px;
 }
 
 ::-webkit-input-placeholder {
@@ -176,9 +221,9 @@ form input {
 }
 
 .regform {
-  width: 290px;
   height: 580px;
   position: relative;
+  width: 290px;
 }
 
 .help, .moreinfo {
@@ -199,19 +244,19 @@ form label {
 }
 
 input:focus {
-  box-shadow: inset 0 0 0 2px #347bff;
   border-color: #347bff ;
+  box-shadow: inset 0 0 0 2px #347bff;
 }
 
 .search-field:focus {
+  border: 1px solid #ccc;
   box-shadow: none;
   outline: 0;
-  border: 1px solid #ccc;
 }
 
 a {
-  text-decoration: none;
   color: #0645ad;
+  text-decoration: none;
 }
 
 .formdiv {
@@ -219,14 +264,14 @@ a {
 }
 
 .biography, .inaction, .standing{
-  width: 270px;
-  min-height: 200px;
   background-color: #f9f9f9;
-  float: right;
   border: 1px solid #aaaaaa;
-  margin: 6px 0 12px 12px;
-  padding: 25px 25px 5px 25px;
   box-sizing: border-box;
+  float: right;
+  margin: 6px 0 12px 12px;
+  min-height: 200px;
+  padding: 25px 25px 5px 25px;
+  width: 270px;
 }
 
 .inaction, .standing {
@@ -234,17 +279,18 @@ a {
 }
 
 .source {
-  padding: 7px 0 0 0;
   font-size: 13px;
+  padding: 7px 0 0 0;
 }
 
-.blue-listing {
+.blue-listing, .sidebar-list, .main-sidebar-list {
   list-style: none;
 }
 
 .blue-listing li::before {
-  color: blue;
-  content: "o  ";
+  color: #0645ad;
+  content: "\2022";
+  font-size: 1.5em;
 }
 
 .main-h1 {
@@ -253,9 +299,9 @@ a {
 
 .toc-content {
   border: 1px solid #bbb;
-  width: 120px;
-  padding: 5px;
   margin: 10px 0 20px 0;
+  padding: 5px;
+  width: 120px;
 }
 
 .toc-content-list li {
@@ -268,28 +314,52 @@ a {
 }
 
 .logo {
-  display: block;
-  width: 136px;
-  height: 155px;
   background: url(../img/enwiki.png);
-  margin: 6px auto 0;
   color: rgba(0, 0, 0, 0);
-}
-
-mh-h4 {
-  text-align: center;
-  padding: 0;
-  border: 0 auto;
+  display: block;
+  height: 155px;
+  margin: 6px auto 0;
+  width: 136px;
 }
 
 .main-content {
+  background-color: #fff;
   border: 1px solid #a7d7f9;
   border-top: 1px solid #a7d7f9;
   border-left: 1px solid #a7d7f9;
   border-bottom: 1px solid #a7d7f9;
+  font-size: 14px;
+  line-height: 20px;
+  min-height: 680px;
   padding-left: 28px;
   padding-right: 16px;
-  min-height: 600px;
-  background-color: #fff;
-  font-size: 14px;
+}
+
+.sidebar-list li:first-child {
+  color: #555;
+  margin: 0 0 0 -20px;
+}
+
+.form-main-div {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.main-sidebar-list {
+  margin-left: -18px;
+}
+
+.main-sidebar div {
+  background: linear-gradient(to right, #fff 0%, #bbb 50%, #fff 100%);
+  height: 1px;
+}
+
+.login-left {
+  margin: 0 0 0 40px;
+}
+
+.login-h1 {
+  border-bottom: none;
+  font-weight: bolder;
+  margin: 40px 0 20px 0;
 }
