@@ -92,6 +92,14 @@ while a < 5:
 
 # print the even numbers
 # print every third number
+# double all elements of a list
+# sum a list
+
+break
+
+continue
+
+# multiply two lists
 
 for i in [1, 2, 3, 4]:
     print(i)
