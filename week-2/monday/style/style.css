@@ -1,3 +1,8 @@
+a {
+  color: #0645ad;
+  text-decoration: none;
+}
+
 a:visited {
   color: #0b0080;
 }
@@ -27,6 +32,10 @@ form input {
   width: 100%;
 }
 
+form label {
+  font-weight: bold;
+}
+
 h1 {
   font-size: 28.8px;
 }
@@ -38,6 +47,11 @@ h1, h2{
   line-height: 1.4em;
   margin: 0;
   overflow: hidden;
+}
+
+input:focus {
+  border-color: #347bff ;
+  box-shadow: inset 0 0 0 2px #347bff;
 }
 
 table {
@@ -52,6 +66,36 @@ td:nth-child(odd) {
   font-weight: bold;
 }
 
+.active-tab a {
+  background: white;
+  border-bottom: 1px solid #fff;
+}
+
+.biography, .inaction, .standing{
+  background-color: #f9f9f9;
+  border: 1px solid #aaaaaa;
+  box-sizing: border-box;
+  float: right;
+  margin: 6px 0 12px 12px;
+  min-height: 200px;
+  padding: 25px 25px 5px 25px;
+  width: 270px;
+}
+
+.biography p {
+  margin-top: 2px;
+  text-align: center;
+}
+
+.blue-listing, .sidebar-list, .main-sidebar-list {
+  list-style: none;
+}
+
+.blue-listing li::before {
+  color: #0645ad;
+  content: "\2022";
+  font-size: 1.5em;
+}
 
 .captcha {
   border: 1px solid #ccc;
@@ -79,12 +123,81 @@ td:nth-child(odd) {
   text-align: center;
 }
 
-
-.biography p {
-  margin-top: 2px;
-  text-align: center;
+.edit-menu {
+  bottom: 0px;
+  right: 290px;
 }
 
+.help, .moreinfo {
+  position: absolute;
+  right: 0px;
+}
+
+.help:hover, .moreinfo:hover {
+  text-decoration: underline;
+}
+
+.formdiv {
+  width: 350px;
+}
+
+.formbutton:hover {
+  background-color: #008c6d;
+}
+
+.form-main-div {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.formbutton {
+  background: #00af89;
+  border: 1px solid #00af89;
+  border-radius: 2px;
+  color: #fff;
+  height: 2.5em;
+  width: 298px;
+}
+
+.login-left {
+  margin: 0 0 0 40px;
+}
+
+.logo {
+  background: url(../img/enwiki.png);
+  color: rgba(0, 0, 0, 0);
+  display: block;
+  height: 155px;
+  margin: 6px auto 0;
+  width: 136px;
+}
+
+.login-h1 {
+  border-bottom: none;
+  font-weight: bolder;
+  margin: 40px 0 20px 0;
+}
+
+.main-content {
+  background-color: #fff;
+  border-top: 1px solid #a7d7f9;
+  border-left: 1px solid #a7d7f9;
+  border-bottom: 1px solid #a7d7f9;
+  font-size: 14px;
+  line-height: 20px;
+  min-height: 680px;
+  padding-left: 28px;
+  padding-right: 16px;
+}
+
+.main-sidebar-list {
+  margin-left: -18px;
+}
+
+.main-sidebar div {
+  background: linear-gradient(to right, #fff 0%, #bbb 50%, #fff 100%);
+  height: 1px;
+}
 
 .main-container {
   order: 1;
@@ -104,6 +217,15 @@ td:nth-child(odd) {
   position: relative;
 }
 
+.main-header nav, .search {
+  position: absolute;
+}
+
+.main-footer {
+  background-color: #f6f6f6;
+  height: 150px;
+}
+
 .main-header ul {
   display: flex;
   margin: 0;
@@ -114,29 +236,29 @@ td:nth-child(odd) {
   list-style: none;
 }
 
-.user-menu {
-  right: 0px;
-  top: 0px;
+.regform {
+  height: 580px;
+  position: relative;
+  width: 290px;
 }
 
-
-
-.edit-menu {
-  bottom: 0px;
-  right: 290px;
+.search-field:focus {
+  border: 1px solid #ccc;
+  box-shadow: none;
+  outline: 0;
 }
 
 .search {
-  bottom: -15px;
+  bottom: -57px;
   position: relative;
-  right: 30px;
+  right: -880px;
   width: 260px;
 }
 
 .search-button {
   background-color: #fff;
   border: none;
-  bottom: 18px;
+  bottom: 3px;
   color: #ccc;
   height: 18px;
   position: absolute;
@@ -153,7 +275,6 @@ td:nth-child(odd) {
   left: 0px;
   bottom: 0px;
 }
-
 
 .tab {
   background: linear-gradient(to bottom, #fff 0%, #a7d7f9 100%);
@@ -172,6 +293,11 @@ td:nth-child(odd) {
   position: relative;
 }
 
+.talk-menu {
+  bottom: 0px;
+  left: 0px;
+}
+
 .user-menu, .special-menu, .edit-menu, .talk-menu {
   font-size: 0.75em;
 }
@@ -181,9 +307,9 @@ td:nth-child(odd) {
   padding: 10px 5px 5px 5px;
 }
 
-.talk-menu {
-  bottom: 0px;
-  left: 0px;
+.user-menu {
+  right: 0px;
+  top: 0px;
 }
 
 .user-status {
@@ -192,86 +318,8 @@ td:nth-child(odd) {
   padding: 10px 5px 10px 20px;
 }
 
-.active-tab a {
-  background: white;
-  border-bottom: 1px solid #fff;
-}
-
-
-.main-header nav, .search {
-  position: absolute;
-}
-
-.main-footer {
-  background-color: #f6f6f6;
-  height: 150px;
-}
-
-.formbutton {
-  background: #00af89;
-  border: 1px solid #00af89;
-  border-radius: 2px;
-  color: #fff;
-  height: 2.5em;
-  width: 298px;
-}
-
 ::-webkit-input-placeholder {
   font-style: italic;
-}
-
-.regform {
-  height: 580px;
-  position: relative;
-  width: 290px;
-}
-
-.help, .moreinfo {
-  position: absolute;
-  right: 0px;
-}
-
-.help:hover, .moreinfo:hover {
-  text-decoration: underline;
-}
-
-.formbutton:hover {
-  background-color: #008c6d;
-}
-
-form label {
-  font-weight: bold;
-}
-
-input:focus {
-  border-color: #347bff ;
-  box-shadow: inset 0 0 0 2px #347bff;
-}
-
-.search-field:focus {
-  border: 1px solid #ccc;
-  box-shadow: none;
-  outline: 0;
-}
-
-a {
-  color: #0645ad;
-  text-decoration: none;
-}
-
-.formdiv {
-  width: 350px;
-}
-
-.biography, .inaction, .standing{
-  background-color: #f9f9f9;
-  border: 1px solid #aaaaaa;
-  box-sizing: border-box;
-  float: right;
-  margin: 6px 0 12px 12px;
-  min-height: 200px;
-  padding: 25px 25px 5px 25px;
-  width: 270px;
 }
 
 .inaction, .standing {
@@ -281,16 +329,6 @@ a {
 .source {
   font-size: 13px;
   padding: 7px 0 0 0;
-}
-
-.blue-listing, .sidebar-list, .main-sidebar-list {
-  list-style: none;
-}
-
-.blue-listing li::before {
-  color: #0645ad;
-  content: "\2022";
-  font-size: 1.5em;
 }
 
 .main-h1 {
@@ -313,53 +351,7 @@ a {
   padding: 0 0 0 30px;
 }
 
-.logo {
-  background: url(../img/enwiki.png);
-  color: rgba(0, 0, 0, 0);
-  display: block;
-  height: 155px;
-  margin: 6px auto 0;
-  width: 136px;
-}
-
-.main-content {
-  background-color: #fff;
-  border: 1px solid #a7d7f9;
-  border-top: 1px solid #a7d7f9;
-  border-left: 1px solid #a7d7f9;
-  border-bottom: 1px solid #a7d7f9;
-  font-size: 14px;
-  line-height: 20px;
-  min-height: 680px;
-  padding-left: 28px;
-  padding-right: 16px;
-}
-
 .sidebar-list li:first-child {
   color: #555;
   margin: 0 0 0 -20px;
-}
-
-.form-main-div {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.main-sidebar-list {
-  margin-left: -18px;
-}
-
-.main-sidebar div {
-  background: linear-gradient(to right, #fff 0%, #bbb 50%, #fff 100%);
-  height: 1px;
-}
-
-.login-left {
-  margin: 0 0 0 40px;
-}
-
-.login-h1 {
-  border-bottom: none;
-  font-weight: bolder;
-  margin: 40px 0 20px 0;
 }
