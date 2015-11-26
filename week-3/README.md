@@ -16,7 +16,7 @@ print(output) # it prints: pearraep
 ```
 ### 2nd Part:
 Create a function that searches for all the palindromes in a string that are
-longer than 3 characters, and returns a list with the found palindromes.
+at least than 3 characters, and returns a list with the found palindromes.
 Example:
 ```python
 output = search_palindromes('dog goat dad duck doodle never')
