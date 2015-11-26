@@ -28,4 +28,4 @@ print(output) # it prints: ['dad', 'dood', 'eve']
 - Functions | Data Structures
 - Class | Object Oriented Programming
 - Exceptions | Testing
-- Dojo
+- Practice and Kata
