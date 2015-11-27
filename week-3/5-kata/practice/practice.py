@@ -33,18 +33,21 @@ j = [54, 23, 66, 12]
 k = [1, 2, 3, 4, 5]
 # increment the 3rd element
 
-l1 = 124
-l2 = 456
-# tell if l1 and l2 are both even numbers
+l = 'pzthon'
+# change the 2nd letter to y
 
-m1 = 203
-m2 = 97
-# tell if any of m1 or m2 is bigger than 100
+m1 = 124
+m2 = 456
+# tell if m1 and m2 are both even numbers
 
-n = 123
+n1 = 203
+n2 = 97
+# tell if any of n1 or n2 is bigger than 100
+
+o = 123
 # print 'Hooray!' if the number is bigger than 100
 
-o = 24
+p = 24
 out = 0
 # if o is even increment out by one
 
