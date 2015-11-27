@@ -1,0 +1,19 @@
+A Wikipédiából, a szabad enciklopédiából
+
+A szöveg Arial betűtípussal
+A lorem ipsum (röviden: lipsum) egy latint utánzó összefüggő szöveg, amelyet a nyomdászatban és az informatikában a betűtípusok, a tipográfia és az elrendezés bemutatására használnak. Nagyszerűsége abban rejlik, hogy a generált szövegben található betűk és betűközök kombinációjában láthatók a legszebben a betűtípusok fontosabb jellemzői, mint például a vastagság és a minta. A lorem ipsum megjelenik a népszerű Microsoft Word dokumentumszerkesztő program súgójában is.
+
+Eredete[szerkesztés | forrásszöveg szerkesztése
+A szöveget Cicero De finibus bonorum et malorum („A legfőbb jóról és rosszról”) című műve néhány bekezdésének véletlenszerűen összevágott szavaiból alakították ki. Ebből következően nincs értelmes jelentése, sokszor még maguknak a szavaknak sem (az elitnek és az ullamcónak például). Az eredeti bekezdés így kezdődik: Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit („Senki sem szereti a fájdalmat önmagáért, vagy törekedik hozzájutni és részesedni benne csak azért, mert az fájdalom…”) Látható, hogy a lipsum helyenként értelmes szavakat vág ketté, máskor egyesíti egymás után következő szavak szótagjait, illetve hosszabb kihagyások után értelmes mondatrészeket illeszt be.
+
+Az 1500-as években egy máig ismeretlen nyomdász latin vakszöveget csinált a különböző nyomdai elrendezések bemutatására. A szöveg eltorzított latin volt, amit azért alkalmazott, mert az ember önkéntelenül elkezdi olvasni a számára értelmes szöveget – így nem tudva elvonatkoztatni attól és az elrendezésre koncentrálni. A szöveg így kezdődött: Lorem ipsum dolor sit amet, consectetur adipiscing elit. A vakszövegnek több formája ismeretes, de az eredeti származását sokáig homály fedte, míg Richard McClintock, a virginiai Hampden-Sydney College latin professzora rá nem akadt Cicero szavaira a szövegben. A nem túl gyakori consectetur szót követve rájött, hogy a szövegrész Cicero Kr. e. 45-ben írt A legfőbb jó és rosszról című művének 32 és 33-as szakaszából származik.
+
+A szabványos szöveg: szerkesztés | forrásszöveg szerkesztése
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Változatok[szerkesztés | forrásszöveg szerkesztése
+A szabványos lipsum szövegnek sok változata létezik, néhányuk csak nagyon kevéssé hasonlít az eredetihez. A szöveg néhány változata olyan további betűket tartalmaz, melyek ritkák vagy hiányzóak a latinban – például a k, w és z –, valamint olyan képtelen szavakat, mint zzril, takimata és gubergren. Ezeket azért adhatták az eredeti idézethez, hogy a betűk megfelelő elosztását elérjék.
+
+Célja: szerkesztés | forrásszöveg szerkesztése
+Köztudott, hogy az embereket megzavarja az olvasható szöveg, ezért egy betűtípus megjelenítésekor a közzétevők a lipsumot használják abból a célból, hogy az emberek a szöveg megjelenésére és betűtípusra koncentráljanak, ne pedig a tartalomra. A lipsumnak ezen felül többé-kevésbé az angoléhoz (és a magyaréhoz) hasonló betűelosztása van, amely szintén segít abban, hogy az emberek ne a tartalmat fürkésszék.
+
+A lipsummal rokonítható pangrammákról, azaz olyan értelmes szövegekről, mondatokról, melyek valamely nyelven az ábécé összes betűjét tartalmazzák, az Árvíztűrő tükörfúrógép szócikk tartalmaz információkat.
