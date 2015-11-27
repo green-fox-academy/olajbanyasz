@@ -47,7 +47,10 @@ n2 = 97
 o = 123
 # print 'Hooray!' if the number is bigger than 100
 
-p = 24
+p = 426
+# print 'Yeah!' if dividable by 4 but print 'End of program' after regardless
+
+q = 24
 out = 0
 # if o is even increment out by one
 
