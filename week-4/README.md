@@ -7,5 +7,5 @@ A command line todo app
 - TDD
 - IO | Modules | PIP
 - Algoryhtms | Data Structures
-- Async
+- Todo app
 - Todo app
