@@ -20,13 +20,13 @@ Create a `Bank_account` class that stores a `name` and a `balance`
 Methods:
  - It should have a method called `pay` that reduces the balance with the given amount
  - It should have a method called `receive` that increases the balance with the given amount
- - It should have a method called `print` that prints the current balance
+ - It should have a method called `print_balance` that prints the current balance
 
 ### RPG game
 Create a Game Character class:
  - that stores it's Name
  - that stores it's Health Points (HP)
- - that stores it's Demage ()
+ - that stores it's Demage
 
 Methods:
  - It should have a `print_status` method that describes the object:
