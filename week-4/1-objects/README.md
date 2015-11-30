@@ -26,7 +26,7 @@ Methods:
 Create a Game Character class:
  - that stores it's Name
  - that stores it's Health Points (HP)
- - that stores it's Demage
+ - that stores it's Damage
 
 Methods:
  - It should have a `print_status` method that describes the object:
