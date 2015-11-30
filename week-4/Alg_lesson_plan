@@ -1,0 +1,89 @@
+Algoritmusok és Futásidők
+Tematika
+
+11:00 Bemutatkozás
+	
+Röviden miről lesz szó
+Feladat -> Modell -> Algoritmus -> Program
+	
+------
+Példák:
+	barkochba - 1-50 gondolok, hány kérdés - 1-1000ig hány kérdés
+	oroszlán keresése a sivatagban 
+	mennyit kell lépni?  log2 n
+	
+	Maximum keresés - lépés n-1 -- O(n)
+	Maximum és minimm keresés 
+	Max és második max keresés
+	
+	rendezett listában 
+	keresés - ugyan így meg
+	hogyan keresünk? 
+		stuki: - miért van, mit csinál, mik az elemei - log2 n
+		
+	Prím szám teszt nlog(n)
+	
+hogy csinálunk rendezett listát?	
+	Buborék rendezés
+	stuki 
+	- mennyit lépett az algorithmusunk
+	n^2
+	
+	
+Hanoi tornyai 
+	játék, hogyan kell megoldani, stuki (rekurzív)
+	=>2^n-1 lépés
+	legenda 64korongrol -1,8E19
+	50e billió év
+	
+-----
+Hogyan foghatjuk meg a futásidőt - definicíók
+
+Ordo(n), Omega(n), Teta(n)
+Mit szeretünk miért?
+
+
+http://tamop412.elte.hu/tananyagok/algoritmusok/lecke2_lap1.html
+
+-----
+ Rendezésekről álltalában, 
+ animált képek
+ Házi feladat - Youtube videók
+ 
+	bubble-sort
+		https://www.youtube.com/watch?v=lyZQPjUT5B4
+	Quick-sort
+		https://www.youtube.com/watch?v=ywWBy6J5gz8
+	Merge-sort
+		https://www.youtube.com/watch?v=XaqR3G_NVoo
+		
+		
+	?
+
+-----
+ Bonyolultság elmélet (röviden)
+ szeretjük a polinomiális dolgokat
+ P - NP
+	tipikus NP teljes problémák
+	
+-----
+ Egy saját projekt története (Többdimenziós Aukciók)
+	|probléma| felvetés közös gondolkodás:
+	 kapacitás vizsgálattal egybekötött versenyeztetés
+	 ?hogyan válasszam ki a legolcsóbbat
+	 
+	NP teljes? :( - most mi lesz?
+	|model|
+	Lineáris programozás alapjai- teljesség igénye nélkül (5-10 percben röviden)
+	
+	|algoritmus|
+	Szimplex - nagyvonalakban - van egy ilyen dobozunk
+	
+	Hogyan dolgoztunk együtt - kinek mi volt a szerepe
+	
+	Szóval csináltunk egy ilyen rendszert
+		mik a futásidők?
+		mikor szabad és hogyan érdemes használni
+		
+
+==========
