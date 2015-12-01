@@ -15,11 +15,23 @@ Optional:
 
 ## Tasks
 
-### Exceptions
+### CodeWars
 
-### Testing basics
+#### Debugging katas
 
-### Debugging
+##### Parser / Syntax error
+* http://www.codewars.com/kata/grasshopper-debug
+* http://www.codewars.com/kata/debug-basic-calculator
+
+##### Logic / Semantic error
+* http://www.codewars.com/kata/2-plus-2-star-2-problem (note: no explicit test case given)
+* http://www.codewars.com/kata/jennys-secret-message
+* http://www.codewars.com/kata/unfinished-loop-bug-fixing-number-1
+
+#### Coding katas
+* http://www.codewars.com/kata/always-perfect
+* http://www.codewars.com/kata/character-frequency-2
+* http://www.codewars.com/kata/summing-a-numbers-digits
 
 [1]: http://pymbook.readthedocs.org/en/latest/exceptions.html
 [2]: https://lpthw.readthedocs.org/en/latest/ex36/
