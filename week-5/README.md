@@ -4,7 +4,7 @@
 Hardware programming
 
 ## Days
-- Design Patterns 1
-- Design Patterns 2
+- TDD
+- Design Patterns
 - Functinal Programming | Lambda
 - HW project
