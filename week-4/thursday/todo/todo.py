@@ -1,5 +1,4 @@
 import os
-import time
 
 def hello():
     os.system('clear')
@@ -15,7 +14,8 @@ def menuChooser():
         chooser = int(input("   Choose from the menu with numbers:  "))
         print("\n")
     except ValueError:
-        print("\n" , "  Wrong selection! Choose from 1-5!")
+        os.system('clear')
+        print("\n" , "  Wrong selection! Choose from 1-6!")
         menuChooser()
 
     if chooser == 1:
@@ -33,7 +33,7 @@ def menuChooser():
         print("   Goodbye!")
         exit()
     else:
-        print("\n" , "  Wrong selection! Choose from 1-5!")
+        print("\n" , "  Wrong selection! Choose from 1-6!")
         menuChooser()
 
 def listTodos():
@@ -76,7 +76,8 @@ def addTodo():
     print("\n")
     newTodo = input("  Write a new TODO: ").upper()
     if newTodo == "":
-        print("  This TODO was empty!!!")
+        os.system('clear')
+        print("   This TODO was empty!!!")
     else:
         fr = open('todos.txt', 'r+')
         text = fr.read()
@@ -98,11 +99,20 @@ def closeTodo():
         print("\t" + "\t" + str(i) + "  " + line.rstrip())
         i += 1
 
+    print("\n")
+
     try:
         choosedTodo = int(input("  Choose from the list with numbers to close:  "))
+        if choosedTodo > (len(lines)) or choosedTodo < 1:
+            os.system('clear')
+            print("\n" , "  Nothing closed!")
+            menuChooser()
+
     except ValueError:
+        os.system('clear')
         print("  Nothing closed!")
-        menuChoser()
+        menuChooser()
+
     print("  You choosed this item to close: " + "\n" + "\t\t" + lines[choosedTodo-1])
     choosedLine = input("  Really want to close this?  Y/N: ").upper()
 
