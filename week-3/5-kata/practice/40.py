@@ -8,12 +8,3 @@ students = [
 # then returns how many candies are own by students
 # under 10
 
-def get_candy_count(students):
-    candy_count = 0
-    for student in students:
-        if student['age'] < 10:
-            candy_count += student['candies']
-    return candy_count
-
-print(get_candy_count(students))
-
