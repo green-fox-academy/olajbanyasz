@@ -5,7 +5,7 @@ Text based RPG game
 
 ## Stories
 
-### Main menu
+### Main menu Story
 Simple command line main menu
 #### Print menu
 - Given a User
@@ -32,8 +32,7 @@ Menu items: New game, Load Game, Exit
 - When the Exit item is selected
 - Then it should exit
 
-### New game
-
+### New game Story
 #### Name
 - Given a user
 - When the `New Game` menu item is selected
@@ -44,7 +43,7 @@ Menu items: New game, Load Game, Exit
 - Given an entered name
 - When the name is displayed
 - Then it should show a submenu
-Menu items: Reenter name, Continue, Quit
+Menu items: Reenter name, Continue, Save, Quit
 
 #### Reenter Name
 - Given an entered Name
@@ -67,7 +66,7 @@ Save and Quit, Quit without save, Resume
   - Health: 2d6 + 12
   - Luck: 1d6 + 6
 - Then it should show a submenu
-Menu items: Reroll stats, Continue, Quit
+Menu items: Reroll stats, Continue, Save, Quit
 
 #### Reroll stats
 - Given the rolled stats
@@ -84,8 +83,39 @@ Menu items: Potion of Health, Potion of Dexterity, Potion of Luck
 - Given the potion menu
 - When the potion is selected
 - Then it should print the selected potion and show a submenu
-Menu items: Reselect the Potion, 
+Menu items: Reselect the Potion, Continue, Quit
 
+#### Reselect Potion
+- Given the selected potion
+- When the Reselect the Potion item is selected
+- Then it should go back to the potion menu
+
+#### Begin
+- Given the selected potion
+- When the Continue item is selected
+- Then it should print the whole character stats:
+  - Dexterity
+  - Strength
+  - Luck
+  - Inventory:
+    - Sword
+    - Leather Armor
+    - Selected potion
+- Also it should show a submenu
+Menu items: Begin, Save, Quit
+
+### Save Story
+
+#### Save menu
+- Given any menu that contains the Save item
+- When the save item is selected
+- Then it should show a submenu, that lists the already saved items and other items
+Menu items: add new item, Resume, Quit
+
+#### Add new item
+- Given the save menu displayed
+- When the add new item is selected 
+- Then it should ask for a name
 
 
 
