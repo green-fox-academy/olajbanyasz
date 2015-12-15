@@ -115,8 +115,6 @@ Menu items: add new item, Resume, Quit
 #### Add new item
 - Given the save menu displayed
 - When the add new item is selected 
-- Then it should ask for a name
+- Then it should ask for a name (finnish it with enter)
 
-
-
-
+#### 
