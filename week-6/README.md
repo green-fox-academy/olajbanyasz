@@ -116,5 +116,20 @@ Menu items: add new item, Resume, Quit
 - Given the save menu displayed
 - When the add new item is selected 
 - Then it should ask for a name (finnish it with enter)
+- Then it should create a new file with the given name like: <name>.json
 
-#### 
+#### Already saved item
+- Given the save menu displayed
+- When an already saved item is selected
+- Then it should rewrite the file with the new state
+
+#### Load game menu
+- Given the main menu
+- When the Load Game item is selected 
+- Then it should show a submenu, that lists the already saved items and other items
+Menu items: Quit
+
+#### Load game
+- Given the load menu
+- When an item is selected
+- Then it should read the state from the file and enter the game
