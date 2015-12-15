@@ -133,3 +133,46 @@ Menu items: Quit
 - Given the load menu
 - When an item is selected
 - Then it should read the state from the file and enter the game
+
+### Fight
+
+#### Test Fight
+- Given a finished character
+- When Begin is selected
+- Then it prints that "Test your Sword in a test fight"
+- Then it show your and a monsters stats:
+  - Name
+  - Max and current Health
+  - Dexterity
+  - Max and current Luck (Not for the monsters)
+- Then it should show a fight submenu
+Items: Strike, Retreat, Quit
+
+#### Strike
+- Given a fight menu
+- When Strike is selected
+- Then it should roll with 2d6 for the monster and the player as well
+  add the dexterity for each and 
+- If the player's is higher than the monsters print: You hit the monster
+Print the submenu: Continue, Try your Luck, Retreat, Quit
+- If the player's is higher than the monsters print: The monster hit you
+Print the submenu: Continue, Try your Luck, Retreat, Quit
+
+#### After strike
+- Given the after strike menu
+- When Continue is selected
+- Then should show the Fight menu, and substract 2 from the loser
+
+#### Try your luck
+- GTiven the after strike menu
+- When Try your luck is selected
+- Then roll with 2d6 
+- If your current luck is smaller than the result and the monster hit you,
+  reduce 3 Health points
+- If your current luck is at least the result and the monster hit you,
+  reduce 1 Health points, and one luck 
+- If your current luck is smaller than the result and you hit the monster,
+  reduce 1 Health points
+- If your current luck is smaller than the result and you hit the monster,
+  reduce 4 Health points, and one luck
+
