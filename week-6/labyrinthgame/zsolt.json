@@ -1,0 +1,12 @@
+{
+  "potion": 1,
+  "inventory": [
+    "Sword",
+    "Leather Armor"
+  ],
+  "name": "zsolt",
+  "position": 1,
+  "health": 17,
+  "dexterity": 12,
+  "luck": 12
+}
