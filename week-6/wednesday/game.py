@@ -169,12 +169,12 @@ class Game():
                 print("Wrong choice!")
                 loadGame()
 
-    def loadcharacterfromjson(self, characterjson):
-        with open(characterjson) as f:
-            json_str = f.read()
-        characterdatas = json.loads(json_str)
-        for attr in characterdatas:
-            setattr(self.player, attr, str(characterdatas[attr]))
+    def loadcharacterfromjson(self, choosedfile):
+        with open(choosedfile) as f:
+            myjson = f.read()
+        attrs = json.loads(myjson)
+        for attr in attrs:
+            setattr(self.player, attr, str(attrs[attr]))
         self.beginmenu()
 
     def saveGame(self):
