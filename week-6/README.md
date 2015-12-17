@@ -173,6 +173,6 @@ Print the submenu: Continue, Try your Luck, Retreat, Quit
   reduce 1 Health points, and one luck 
 - If your current luck is smaller than the result and you hit the monster,
   reduce 1 Health points
-- If your current luck is smaller than the result and you hit the monster,
+- If your current luck is at least the result and you hit the monster,
   reduce 4 Health points, and one luck
 
