@@ -77,6 +77,13 @@
   - Self
   - Constructor
   - Inheritance
+- Exceptions
+  - `try`
+  - `raise`
+  - `except`
+  - Exceptions
+- Modules
+  - Import other files
 
 ## Methodologies
 - Testing
