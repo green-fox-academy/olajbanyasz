@@ -39,6 +39,12 @@ console.log(a);
 console.log(++a);
 console.log(a);
 
+// use camel case variables
+var minutesSinceYestreday;
+
+// undefined
+var c;
+console.log(c);
 
 // Excercises
 
