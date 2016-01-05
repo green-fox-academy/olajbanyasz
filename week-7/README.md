@@ -1,11 +1,8 @@
-# Week 7 - DevOps
+# Week 7 - JavaScript
 
 ## Project
-Host an application
+Gallery
 
 ## Days
-- File system | Permissions
-- Packages | Processes | Memory
-- Hosting
-- Continous Integration | Metrics
-- Hosting the application
+- Coding Dojo (sudoku validator)
+- JS basics
