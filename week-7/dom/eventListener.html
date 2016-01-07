@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Proba</title>
+</head>
+<body style="height: 1000px">
+
+  <button class="csinal">gomb</button>
+
+  <script>
+    var gomb = document.querySelector('.csinal');
+
+    gomb.addEventListener('click', function () {
+      alert('csinald');
+    });
+
+    window.addEventListener('scroll', function () {
+      console.log('scroll', window.scrollY);
+    });
+  </script>
+
+</body>
+</html>
