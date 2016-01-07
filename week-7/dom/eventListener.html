@@ -6,12 +6,15 @@
 </head>
 <body style="height: 1000px">
 
-  <button class="csinal">gomb</button>
+  <button class="csinal"><span class="gombBelso">gomb</span></button>
 
   <script>
     var gomb = document.querySelector('.csinal');
 
-    gomb.addEventListener('click', function () {
+    gomb.addEventListener('click', function (event) {
+      console.log(event);
+      console.log(event.target);
+      console.log(event.currentTarget);
       alert('csinald');
     });
 
