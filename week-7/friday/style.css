@@ -1,0 +1,71 @@
+body {
+    margin: 0 auto;
+}
+
+h1, h3{
+  color: #29AAE1;
+  text-align: center;
+}
+
+.gallerydiv {
+  line-height: 400px;
+  margin: 0 auto;
+  text-align: center;
+  width: 1000px;
+}
+
+#mainPicture {
+  border-radius: 20px;
+  height: 400px;
+  margin-left: 30px;
+  margin-right: 30px;
+  vertical-align: middle;
+}
+
+button {
+  background-repeat: no-repeat;
+  border: 0;
+  height: 100px;
+  vertical-align: middle;
+  width: 100px;
+}
+
+.left {
+  background: url(left.jpg);
+}
+
+.right {
+  background: url(right.jpg);
+}
+
+.thumbnail {
+  line-height: 70px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 800px;
+}
+
+.haveseen {
+  border-top: 10px solid #29AAE1;
+}
+
+.thumbnailimages {
+  border-bottom: 10px solid #FFF;
+  -webkit-filter: blur(2px);
+  height: 60px;
+  text-align: center;
+}
+
+.seenow {
+  border-bottom: 10px solid #29AAE1;
+}
+
+.thumbnail :hover {
+  -webkit-filter: blur(0);
+}
+
+:focus {
+  outline: 0;
+}
