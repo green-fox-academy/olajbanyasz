@@ -1,5 +1,7 @@
 'use strict';
-
+  var timerOn = false;
+  var startTime = Date.now();
+  var endTime = Date.now();
   var candies = 0;
   var lollypops = 0;
   var createCandyButton = document.querySelector('.create-candy');
@@ -12,8 +14,16 @@
   autoCreateCandies();
 
 function createCandy() {
+  gameTimer();
   candies++;
   displayStats();
+}
+
+function gameTimer() {
+  if ((!timerOn) && (candies === 0) && (lollypops === 0)) {
+    startTime = Date.now();
+    timerOn = true;
+  }
 }
 
 function buyLollypop() {
@@ -31,7 +41,9 @@ function enableBuyLollypopButton() {
 }
 
 function displayStats() {
+  gameEnd();
   autoBuyer();
+  document.querySelector('h1').textContent = 'Candy Game: ' + (endTime-startTime)/1000 + ' sec';
   candiesText.textContent = 'Candies: ' + candies;
   lollypopsText.textContent = 'Lollypops: ' + lollypops;
   enableBuyLollypopButton();
@@ -54,5 +66,14 @@ function autoBuyer() {
   if (autoBuy.checked) {
     lollypops += newLollipops();
     candies -= newLollipops()*10;
+  }
+}
+
+function gameEnd() {
+  if ((candies >= 10000) && (timerOn)) {
+    endTime = Date.now();
+    timerOn = false;
+  } else if ((candies < 10000) && (timerOn)) {
+    endTime = Date.now();
   }
 }
