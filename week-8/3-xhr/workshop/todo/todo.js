@@ -25,9 +25,3 @@ var createTodoCallback = function (response) {
 }
 
 createRequest('POST', url, newTodo, createTodoCallback);
-
-
-
-
-
-var dataToSend = JSON.stringify({text: 'jaj de jo'});
