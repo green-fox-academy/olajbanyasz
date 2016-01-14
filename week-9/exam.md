@@ -7,7 +7,6 @@
   - Remove
   - Push
   - Clone
-  - Fetch
 - Editor
 - CMD
   - cd
@@ -85,9 +84,5 @@
 - Modules
   - Import other files
 
-## Methodologies
-- Testing
-  - Testing framework
-  - TDD
 
 
