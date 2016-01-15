@@ -1,0 +1,21 @@
+div {
+  line-height: 30px;
+}
+
+body {
+  margin: 10px auto;
+  text-align: center;
+}
+
+.false {
+  color: red;
+}
+
+.true {
+  color: green;
+}
+
+textarea {
+  border-radius: 3px;
+  resize: none;
+}
