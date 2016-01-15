@@ -11,8 +11,9 @@ createButton.addEventListener('click', callCreateNewToDo);
 function callCreateNewToDo() {
   if (inputText.value != '') {
     createNewTodo(inputText.value);
-    callCreateRequest();
+    setTimeout(callCreateRequest,600);
   }
+  inputText.value = '';
 }
 
 function callCreateRequest() {
@@ -21,14 +22,13 @@ function callCreateRequest() {
 
 function callDeleteTodo() {
   deleteTodo(event.target.parentNode.id);
-  callCreateRequest();
+  setTimeout(callCreateRequest,600);
 }
 
 function callCompleteTodo() {
-  var textLength = (event.target.parentNode.innerText).length;
-  var subText = event.target.parentNode.innerText.substring(0, textLength-14);
-  completeTodo(event.target.parentNode.id, subText);
-  callCreateRequest();
+  var text = event.target.parentNode.innerText.substring(0, ((event.target.parentNode.innerText).length)-2);
+  completeTodo(event.target.parentNode.id, text);
+  setTimeout(callCreateRequest,600);
 }
 
 function createRequest(callback) {
@@ -78,14 +78,14 @@ function deletePreviewsButtons() {
 function makeCompleteButton() {
   var newCompleteButton = document.createElement('button');
   newCompleteButton.setAttribute('class', 'complete-button');
-  newCompleteButton.innerText = 'Complete';
+  newCompleteButton.innerText = '\u2611';
   event.target.appendChild(newCompleteButton);
   newCompleteButton.addEventListener('click', callCompleteTodo);
 }
 
 function makeDeleteButton() {
   var newDeleteButton = document.createElement('button');
-  newDeleteButton.innerText = 'Delete';
+  newDeleteButton.innerText = '\u2612';
   newDeleteButton.setAttribute('class', 'delete-button');
   event.target.appendChild(newDeleteButton);
   newDeleteButton.addEventListener('click', callDeleteTodo);
