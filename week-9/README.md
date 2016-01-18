@@ -1,7 +1,4 @@
-# Week 9 - End 2 End Project
+# Week 9 - Databases
 
 ## Project
-Calorie Counter App
-
-## Days
-- Working on stories
+Todo App with database
