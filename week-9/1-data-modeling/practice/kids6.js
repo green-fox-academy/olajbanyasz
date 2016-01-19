@@ -9,6 +9,25 @@ var kids = [
 ];
 
 
+function countBySex(kids) {
+  var output = {female: 0, male: 0};
+  kids.forEach(function(kid) {
+    output[kid.sex]++;
+  });
+  return output;
+}
 
-console.log(countBySex(kids)); // {female: 2, male: 3}
+function countBySex2(kids) {
+  var output = {};
+  kids.forEach(function(kid) {
+    if (!(kid.sex in output)) {
+      output[kid.sex] = 0;
+    }
+    output[kid.sex]++;
+  });
+  return output;
+}
+
+
+console.log(countBySex2(kids)); // {female: 2, male: 3}
 
