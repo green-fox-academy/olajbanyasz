@@ -1,0 +1,54 @@
+div {
+  font-weight: bold;
+  line-height: 20px;
+  margin-top: 10px;
+}
+
+body {
+  margin: 10px auto;
+  text-align: center;
+}
+
+.false {
+  color: #000;
+}
+
+.true {
+  color: #888;
+  text-decoration: line-through;
+}
+
+textarea {
+  border-color: #2352d3;
+  border-radius: 5px;
+  resize: none;
+  margin-bottom: -13px;
+  outline: none;
+}
+
+button {
+  background-color: #bbe6e8;
+  border-color: #2352d3;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.complete-button {
+  color: orange;
+  border-style: none;
+  background: transparent;
+  border-radius: 12px;
+  font-size: 200%;
+  height: 30px;
+  width: 30px;
+}
+
+.delete-button {
+  color: red;
+  border-style: none;
+  background: transparent;
+  border-radius: 12px;
+  font-size: 200%;
+  height: 30px;
+  width: 30px;
+}
