@@ -63,8 +63,8 @@ function displayTodos(response) {
 
 function createDeleteAndCompleteButtons() {
   deletePreviewsButtons();
-  makeCompleteButton();
-  makeDeleteButton();
+  makeButton('\u2611', 'complete-button', callCompleteTodo);
+  makeButton('\u2612', 'delete-button', callDeleteTodo);
 }
 
 function deletePreviewsButtons() {
@@ -75,22 +75,14 @@ function deletePreviewsButtons() {
   }
 }
 
-function makeCompleteButton() {
-  var newCompleteButton = document.createElement('button');
-  newCompleteButton.setAttribute('class', 'complete-button');
-  newCompleteButton.innerText = '\u2611';
-  event.target.appendChild(newCompleteButton);
-  newCompleteButton.addEventListener('click', callCompleteTodo);
-}
+function makeButton(buttonText, className, eventFunction) {
+  var newButton = document.createElement('button');
+  newButton.innerText = buttonText;
+  newButton.setAttribute('class', className);
+  event.target.appendChild(newButton);
+  newButton.addEventListener('click', eventFunction);
 
-function makeDeleteButton() {
-  var newDeleteButton = document.createElement('button');
-  newDeleteButton.innerText = '\u2612';
-  newDeleteButton.setAttribute('class', 'delete-button');
-  event.target.appendChild(newDeleteButton);
-  newDeleteButton.addEventListener('click', callDeleteTodo);
 }
-
 function createNewTodo(todotext) {
   var request = new  XMLHttpRequest();
   request.open('POST', url);
